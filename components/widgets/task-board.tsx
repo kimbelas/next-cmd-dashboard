@@ -3,7 +3,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Task } from "@/types/dashboard";
-import { cn } from "@/lib/utils/cn";
 
 interface TaskBoardProps {
   tasks: Task[];

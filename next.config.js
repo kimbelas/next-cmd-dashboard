@@ -5,9 +5,6 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
-  experimental: {
-    optimizeCss: true,
-  },
   images: {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [320, 420, 640, 768, 1024, 1280, 1536],

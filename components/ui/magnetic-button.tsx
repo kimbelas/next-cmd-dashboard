@@ -1,10 +1,10 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, HTMLMotionProps } from "framer-motion";
 import { cn } from "@/lib/utils/cn";
 
-interface MagneticButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface MagneticButtonProps extends Omit<HTMLMotionProps<"button">, "animate" | "transition"> {
   children: React.ReactNode;
   className?: string;
 }

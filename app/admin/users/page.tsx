@@ -14,7 +14,7 @@ export default function UsersPage() {
     { id: 5, name: "Tom Brown", email: "tom@example.com", role: "viewer", status: "inactive", lastLogin: "1 week ago" },
   ];
 
-  const roleColors: Record<string, "default" | "secondary" | "success"> = {
+  const roleColors: Record<string, "default" | "secondary" | "success" | "destructive"> = {
     admin: "destructive",
     editor: "default",
     viewer: "secondary",
