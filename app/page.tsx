@@ -95,7 +95,7 @@ function HeroSection() {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="max-w-lg text-xl font-medium leading-relaxed"
             >
-              Built for modern teams who demand speed, reliability, and a UI that doesn't waste time.
+              Built for modern teams who demand speed, reliability, and a UI that doesn&apos;t waste time.
               Zero fluff. Pure performance.
             </motion.p>
 
@@ -287,7 +287,11 @@ function FeaturesGrid() {
   );
 }
 
-function FeatureCard({ feature, index, isIntersecting }: any) {
+function FeatureCard({ feature, index, isIntersecting }: {
+  feature: { icon: React.ComponentType<{ className?: string }>, title: string, description: string, color: string },
+  index: number,
+  isIntersecting: boolean
+}) {
   const Icon = feature.icon;
 
   return (
@@ -392,7 +396,7 @@ function TestimonialsSection() {
               key={index}
               className="brutalist-border brutalist-shadow bg-white p-6"
             >
-              <div className="mb-6 text-4xl font-black">"</div>
+              <div className="mb-6 text-4xl font-black">&quot;</div>
               <p className="mb-6 text-lg font-bold leading-relaxed">{testimonial.quote}</p>
               <div className="border-t-[3px] border-black pt-4">
                 <div className="font-black">{testimonial.author}</div>
